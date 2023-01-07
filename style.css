@@ -1,0 +1,81 @@
+body {
+  background-color: black;
+}
+
+#board {
+  position: relative;
+  width: 819px;
+  height: 690px;
+  margin: auto;
+  background: url("board.jpg") no-repeat;
+}
+
+#message-area {
+  position: absolute;
+  top: 48px;
+  left: 139px;
+  font-size: 1.4em;
+  color: rgb(83, 175, 19);
+}
+
+#grid {
+  position: absolute;
+  left: 139px;
+  top: 78px;
+  border-spacing: 0;
+}
+
+td {
+  width: 75px;
+  height: 75px;
+}
+
+form {
+  position: absolute;
+  top: 0px;
+  left: 139px;
+  padding: 5px;
+  background-color: rgb(83, 175, 19);
+}
+
+form input {
+  background-color: rgb
+(152, 207, 113);
+  border-color: rgb(83, 175, 19);
+  font-size: 1em;
+}
+
+.hit {
+  background: url("ship.png") no-repeat center center;
+}
+
+.miss {
+  background: url("miss.png") no-repeat center center;
+}
+
+.sunk {
+  background: url("ship2.png") no-repeat center center;
+}
+
+#scoreboard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+  background-color: rgb(83, 175, 19);
+}
+
+#scoreboard div {
+  margin-bottom: 5px;
+}
+
+#shots-remaining {
+  font-size: 1.2em;
+}
+
+#ships-sunk {
+  font-size: 1.2em;
+}
